@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+php_value extension php_fileinfo.dll 
+
+RewriteRule . index.php

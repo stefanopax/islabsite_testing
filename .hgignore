@@ -1,0 +1,7 @@
+syntax: glob
+.htaccess
+.idea/**
+runtime/**
+web/assets/**
+web/index.php
+config/db.php

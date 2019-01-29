@@ -1,0 +1,1828 @@
+2019-01-29 05:13:46 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 05:13:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'cicio@u.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ggp8nevohctqlbpjfnpao8lbuu'
+    '_csrf' => 'cf625e6167496bd48241e311a65cbb518fc7991749c90a6b26453dec516aafa7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vPFYjTOY2huOUMhl_1Q-2mmxveZctIhf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=ggp8nevohctqlbpjfnpao8lbuu; _csrf=cf625e6167496bd48241e311a65cbb518fc7991749c90a6b26453dec516aafa7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vPFYjTOY2huOUMhl_1Q-2mmxveZctIhf%22%3B%7D'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 136144: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=cicio%40u.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '136144'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '65359'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=cicio%40u.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=cicio%40u.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=cicio%40u.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548767626.907
+    'REQUEST_TIME' => 1548767626
+]
+2019-01-29 05:40:16 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 05:40:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'postgresciccio@uit.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ggp8nevohctqlbpjfnpao8lbuu'
+    '_csrf' => 'cf625e6167496bd48241e311a65cbb518fc7991749c90a6b26453dec516aafa7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vPFYjTOY2huOUMhl_1Q-2mmxveZctIhf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=ggp8nevohctqlbpjfnpao8lbuu; _csrf=cf625e6167496bd48241e311a65cbb518fc7991749c90a6b26453dec516aafa7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vPFYjTOY2huOUMhl_1Q-2mmxveZctIhf%22%3B%7D'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 147488: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=postgresciccio%40uit.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '147488'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50340'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=postgresciccio%40uit.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=postgresciccio%40uit.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=postgresciccio%40uit.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548769216.26
+    'REQUEST_TIME' => 1548769216
+]
+2019-01-29 06:22:37 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 06:22:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'cixccio@gmail.com'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ggp8nevohctqlbpjfnpao8lbuu'
+    '_csrf' => 'cf625e6167496bd48241e311a65cbb518fc7991749c90a6b26453dec516aafa7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vPFYjTOY2huOUMhl_1Q-2mmxveZctIhf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=ggp8nevohctqlbpjfnpao8lbuu; _csrf=cf625e6167496bd48241e311a65cbb518fc7991749c90a6b26453dec516aafa7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vPFYjTOY2huOUMhl_1Q-2mmxveZctIhf%22%3B%7D'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 162630: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=cixccio%40gmail.com, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '162630'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '62973'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=cixccio%40gmail.com'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=cixccio%40gmail.com'
+    'REQUEST_URI' => '/basic/web/site/register?username=cixccio%40gmail.com'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548771757.586
+    'REQUEST_TIME' => 1548771757
+]
+2019-01-29 07:15:42 [127.0.0.1][-][45kffvlon459adihjtjp1aqa2t][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/< in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('<', Array)
+#1 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/<', Array)
+#2 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-01-29 07:15:42 [127.0.0.1][-][45kffvlon459adihjtjp1aqa2t][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '4883d5ada546d88555555a05aa35f4892091865595ed4e8040b658db3c9583c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iQxMHZTTplJfFJOYSElYRjpxss4ewzL_\";}'
+    'PHPSESSID' => '45kffvlon459adihjtjp1aqa2t'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4883d5ada546d88555555a05aa35f4892091865595ed4e8040b658db3c9583c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iQxMHZTTplJfFJOYSElYRjpxss4ewzL_%22%3B%7D; PHPSESSID=45kffvlon459adihjtjp1aqa2t'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 183666: before request, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '183666'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50324'
+    'REDIRECT_URL' => '/basic/web/site/<'
+    'REDIRECT_QUERY_STRING' => '=%20Url::to(%27@example%27)?%3E'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '=%20Url::to(%27@example%27)?%3E'
+    'REQUEST_URI' => '/basic/web/site/%3C?=%20Url::to(%27@example%27)?%3E'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548774942.115
+    'REQUEST_TIME' => 1548774942
+]
+2019-01-29 07:41:27 [127.0.0.1][1][p79d7u3r69gkhe8in6cp5uh588][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: exam in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#3 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('subscribers', Array)
+#4 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-01-29 07:41:26 [127.0.0.1][1][p79d7u3r69gkhe8in6cp5uh588][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p79d7u3r69gkhe8in6cp5uh588'
+    '_identity' => 'e5b4a05a2826f1d665ba61dde7d9f3a69e88a4b00e231eeec4c39d3e9900c6e4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ZB-sO0dY3H6nf7NvQw9LGIAP1OwnraiK\",2592000]\";}'
+    '_csrf' => 'ca1f7e17865497692c02d0b364618cdae7506dcb51b26176fc63d13e35ce6567a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mIvmRx8_pFWFo3s6RPxMS6j_sRKpBPxs\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=p79d7u3r69gkhe8in6cp5uh588; _identity=e5b4a05a2826f1d665ba61dde7d9f3a69e88a4b00e231eeec4c39d3e9900c6e4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ZB-sO0dY3H6nf7NvQw9LGIAP1OwnraiK%22%2C2592000%5D%22%3B%7D; _csrf=ca1f7e17865497692c02d0b364618cdae7506dcb51b26176fc63d13e35ce6567a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mIvmRx8_pFWFo3s6RPxMS6j_sRKpBPxs%22%3B%7D'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 193535: before request, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '193535'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '51936'
+    'REDIRECT_URL' => '/basic/web/subscribers'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/subscribers'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548776486.494
+    'REQUEST_TIME' => 1548776486
+]
+2019-01-29 07:52:52 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 07:52:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'stefano.paci@studenti.unimi.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'ca1f7e17865497692c02d0b364618cdae7506dcb51b26176fc63d13e35ce6567a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mIvmRx8_pFWFo3s6RPxMS6j_sRKpBPxs\";}'
+    'PHPSESSID' => 's8f27acca4docujm05jlmuvtns'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=ca1f7e17865497692c02d0b364618cdae7506dcb51b26176fc63d13e35ce6567a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mIvmRx8_pFWFo3s6RPxMS6j_sRKpBPxs%22%3B%7D; PHPSESSID=s8f27acca4docujm05jlmuvtns'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 197746: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=stefano.paci%40studenti.unimi.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '197746'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59713'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=stefano.paci%40studenti.unimi.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=stefano.paci%40studenti.unimi.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=stefano.paci%40studenti.unimi.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548777172.392
+    'REQUEST_TIME' => 1548777172
+]
+2019-01-29 07:55:17 [127.0.0.1][6][daotga5qd2um69am1cl8fj57fg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/studenthome in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('studenthome', Array)
+#1 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/studenthom...', Array)
+#2 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-01-29 07:55:16 [127.0.0.1][6][daotga5qd2um69am1cl8fj57fg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'daotga5qd2um69am1cl8fj57fg'
+    '_identity' => 'ebfa755ff47da531db25f87ea4ce6cb9ffdfa72e81a9fc4a1ac1777686e1b67aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"XraLdgQrlL27-I9jClAAoFzYb09aBSba\",2592000]\";}'
+    '_csrf' => '133a8297cf42a92063e410fd5f1d375f1f61861bc2eab285ee62d1b07d749faca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yRy8p4YKDhMkzYvfX1TGAjqUFjEhmjWj\";}'
+]
+
+$_SESSION = [
+    '__id' => 6
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/studenthome'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=daotga5qd2um69am1cl8fj57fg; _identity=ebfa755ff47da531db25f87ea4ce6cb9ffdfa72e81a9fc4a1ac1777686e1b67aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22XraLdgQrlL27-I9jClAAoFzYb09aBSba%22%2C2592000%5D%22%3B%7D; _csrf=133a8297cf42a92063e410fd5f1d375f1f61861bc2eab285ee62d1b07d749faca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yRy8p4YKDhMkzYvfX1TGAjqUFjEhmjWj%22%3B%7D'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 198784: before request, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '198784'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '61479'
+    'REDIRECT_URL' => '/basic/web/site/studenthome'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/site/studenthome'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548777316.301
+    'REQUEST_TIME' => 1548777316
+]
+2019-01-29 12:01:19 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:01:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'stefano.paci@studenti.unimi.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'daotga5qd2um69am1cl8fj57fg'
+    '_csrf' => '133a8297cf42a92063e410fd5f1d375f1f61861bc2eab285ee62d1b07d749faca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yRy8p4YKDhMkzYvfX1TGAjqUFjEhmjWj\";}'
+]
+
+$_SESSION = [
+    '__id' => 6
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=daotga5qd2um69am1cl8fj57fg; _csrf=133a8297cf42a92063e410fd5f1d375f1f61861bc2eab285ee62d1b07d749faca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yRy8p4YKDhMkzYvfX1TGAjqUFjEhmjWj%22%3B%7D'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 295676: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=stefano.paci%40studenti.unimi.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '295676'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '51246'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=stefano.paci%40studenti.unimi.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=stefano.paci%40studenti.unimi.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=stefano.paci%40studenti.unimi.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548792078.381
+    'REQUEST_TIME' => 1548792078
+]
+2019-01-29 12:01:41 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:01:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'stefano.paci@studenti.unimi.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'daotga5qd2um69am1cl8fj57fg'
+    '_csrf' => '133a8297cf42a92063e410fd5f1d375f1f61861bc2eab285ee62d1b07d749faca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yRy8p4YKDhMkzYvfX1TGAjqUFjEhmjWj\";}'
+]
+
+$_SESSION = [
+    '__id' => 6
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=daotga5qd2um69am1cl8fj57fg; _csrf=133a8297cf42a92063e410fd5f1d375f1f61861bc2eab285ee62d1b07d749faca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yRy8p4YKDhMkzYvfX1TGAjqUFjEhmjWj%22%3B%7D'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 295856: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=stefano.paci%40studenti.unimi.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '295856'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '51418'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=stefano.paci%40studenti.unimi.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=stefano.paci%40studenti.unimi.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=stefano.paci%40studenti.unimi.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548792100.118
+    'REQUEST_TIME' => 1548792100
+]
+2019-01-29 12:14:59 [127.0.0.1][1][nat6ug70bdejl7kpdckql0a190][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: courseSite in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#3 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('file/', Array)
+#4 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-01-29 12:14:58 [127.0.0.1][1][nat6ug70bdejl7kpdckql0a190][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'nat6ug70bdejl7kpdckql0a190'
+    '_identity' => '970b0ece906449a402b5f24ff72e51ebacc472596af5819ba380719611c2c90ea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wXbLZZ-40zkxC0KvgAlKs6XeDAGf-yF1\",2592000]\";}'
+    '_csrf' => '7122a62fd6337b911e47160d7c7dd5018688dd8f1c90974ffa91b1da9340a153a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ujUaPpSnobV9cxAeaTnPWcOIV_T80bbl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=nat6ug70bdejl7kpdckql0a190; _identity=970b0ece906449a402b5f24ff72e51ebacc472596af5819ba380719611c2c90ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wXbLZZ-40zkxC0KvgAlKs6XeDAGf-yF1%22%2C2592000%5D%22%3B%7D; _csrf=7122a62fd6337b911e47160d7c7dd5018688dd8f1c90974ffa91b1da9340a153a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ujUaPpSnobV9cxAeaTnPWcOIV_T80bbl%22%3B%7D'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 301558: before request, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '301558'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60868'
+    'REDIRECT_URL' => '/basic/web/file/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/file/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548792898.572
+    'REQUEST_TIME' => 1548792898
+]
+2019-01-29 12:31:12 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:31:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'cicion@unimi.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '94b1513000e716cd69efae1e7d40a0b8834b446444780eba412071f4ba887a92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4URumaV_su_HlUwTSIA1vaLXRLVzqfM4\";}'
+    'PHPSESSID' => 'v72r1qejfu6ifs2q4m9rnvkdvf'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=94b1513000e716cd69efae1e7d40a0b8834b446444780eba412071f4ba887a92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224URumaV_su_HlUwTSIA1vaLXRLVzqfM4%22%3B%7D; PHPSESSID=v72r1qejfu6ifs2q4m9rnvkdvf'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 308114: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=cicion%40unimi.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '308114'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '55517'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=cicion%40unimi.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=cicion%40unimi.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=cicion%40unimi.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548793872.802
+    'REQUEST_TIME' => 1548793872
+]
+2019-01-29 12:34:05 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:34:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'ciccion@unim.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 309425: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=ciccion%40unim.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '309425'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '57585'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=ciccion%40unim.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=ciccion%40unim.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=ciccion%40unim.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548794045.843
+    'REQUEST_TIME' => 1548794045
+]
+2019-01-29 12:37:01 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:37:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'stefano.das@studenti.unimi.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 310578: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=stefano.das%40studenti.unimi.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '310578'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59566'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=stefano.das%40studenti.unimi.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=stefano.das%40studenti.unimi.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=stefano.das%40studenti.unimi.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548794221.3
+    'REQUEST_TIME' => 1548794221
+]
+2019-01-29 12:37:34 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:37:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'ciccion@unim.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 310835: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=ciccion%40unim.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '310835'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59993'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=ciccion%40unim.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=ciccion%40unim.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=ciccion%40unim.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548794254.701
+    'REQUEST_TIME' => 1548794254
+]
+2019-01-29 12:40:06 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:40:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'dasd@gmail.com'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 311854: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=dasd%40gmail.com, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '311854'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '61737'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=dasd%40gmail.com'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=dasd%40gmail.com'
+    'REQUEST_URI' => '/basic/web/site/register?username=dasd%40gmail.com'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548794404.919
+    'REQUEST_TIME' => 1548794404
+]
+2019-01-29 12:42:53 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:42:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'das@gmail.com'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 313042: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=das%40gmail.com, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '313042'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '63767'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=das%40gmail.com'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=das%40gmail.com'
+    'REQUEST_URI' => '/basic/web/site/register?username=das%40gmail.com'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548794573.771
+    'REQUEST_TIME' => 1548794573
+]
+2019-01-29 12:44:13 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:44:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'postgresdas@dasdas.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 313616: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=postgresdas%40dasdas.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '313616'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '64690'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=postgresdas%40dasdas.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=postgresdas%40dasdas.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=postgresdas%40dasdas.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548794653.121
+    'REQUEST_TIME' => 1548794653
+]
+2019-01-29 12:45:22 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:45:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'dasdsa@dass.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 314103: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=dasdsa%40dass.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '314103'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '65391'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=dasdsa%40dass.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=dasdsa%40dass.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=dasdsa%40dass.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548794722.67
+    'REQUEST_TIME' => 1548794722
+]
+2019-01-29 12:45:41 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:45:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'dasdsa@dass.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 314250: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=dasdsa%40dass.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '314250'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49247'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=dasdsa%40dass.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=dasdsa%40dass.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=dasdsa%40dass.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548794741.199
+    'REQUEST_TIME' => 1548794741
+]
+2019-01-29 12:46:55 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:46:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'dasdsa@dass.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 314752: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=dasdsa%40dass.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '314752'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50181'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=dasdsa%40dass.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=dasdsa%40dass.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=dasdsa%40dass.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548794815.569
+    'REQUEST_TIME' => 1548794815
+]
+2019-01-29 12:47:34 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:47:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'da@as.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 315037: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=da%40as.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '315037'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50638'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=da%40as.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=da%40as.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=da%40as.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548794853.979
+    'REQUEST_TIME' => 1548794853
+]
+2019-01-29 12:50:36 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:50:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'postgres@dsa.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs\";}'
+    'PHPSESSID' => 'm61fcv98bs6ptp50bpu8bk8364'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=a459059fa76dae97c053777881b0aa72c9eedf72db7189adf5858863ed3d7d41a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z-riVRz4TitMq4rvkq20GJrkxVNOJkMs%22%3B%7D; PHPSESSID=m61fcv98bs6ptp50bpu8bk8364'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 316249: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=postgres%40dsa.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '316249'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '52952'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=postgres%40dsa.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=postgres%40dsa.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=postgres%40dsa.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548795036.026
+    'REQUEST_TIME' => 1548795036
+]
+2019-01-29 12:51:52 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:51:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'postgres@dsa.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '65a7821a418bd56bd58f228a40b263c5adc55389ff65c7c1b067ee806e208d62a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VmWHM7NC5Hvn2dx8Lg3ZP_3UGOcG4S2j\";}'
+    'PHPSESSID' => '9pd1l2rcncmu3q27g19vm76ms7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=65a7821a418bd56bd58f228a40b263c5adc55389ff65c7c1b067ee806e208d62a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VmWHM7NC5Hvn2dx8Lg3ZP_3UGOcG4S2j%22%3B%7D; PHPSESSID=9pd1l2rcncmu3q27g19vm76ms7'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 316852: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=postgres%40dsa.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '316852'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '53929'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=postgres%40dsa.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=postgres%40dsa.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=postgres%40dsa.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548795112.555
+    'REQUEST_TIME' => 1548795112
+]
+2019-01-29 12:52:52 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:52:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'silvana.castano@unisdasdasmi.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '65a7821a418bd56bd58f228a40b263c5adc55389ff65c7c1b067ee806e208d62a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VmWHM7NC5Hvn2dx8Lg3ZP_3UGOcG4S2j\";}'
+    'PHPSESSID' => '9pd1l2rcncmu3q27g19vm76ms7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=65a7821a418bd56bd58f228a40b263c5adc55389ff65c7c1b067ee806e208d62a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VmWHM7NC5Hvn2dx8Lg3ZP_3UGOcG4S2j%22%3B%7D; PHPSESSID=9pd1l2rcncmu3q27g19vm76ms7'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 317274: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=silvana.castano%40unisdasdasmi.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '317274'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '54700'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=silvana.castano%40unisdasdasmi.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=silvana.castano%40unisdasdasmi.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=silvana.castano%40unisdasdasmi.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548795172.078
+    'REQUEST_TIME' => 1548795172
+]
+2019-01-29 12:58:32 [127.0.0.1][-][-][error][application] []
+    in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\controllers\SiteController.php:146
+2019-01-29 12:58:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => 'silvana.castano@asdunimi.it'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '65a7821a418bd56bd58f228a40b263c5adc55389ff65c7c1b067ee806e208d62a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VmWHM7NC5Hvn2dx8Lg3ZP_3UGOcG4S2j\";}'
+    'PHPSESSID' => '9pd1l2rcncmu3q27g19vm76ms7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => '_csrf=65a7821a418bd56bd58f228a40b263c5adc55389ff65c7c1b067ee806e208d62a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VmWHM7NC5Hvn2dx8Lg3ZP_3UGOcG4S2j%22%3B%7D; PHPSESSID=9pd1l2rcncmu3q27g19vm76ms7'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 319615: before request, vpn is not allowed, send headers, headers received, status: HTTP/1.1 302 Found, before request http://127.0.0.1/basic/web/site/register?username=silvana.castano%40asdunimi.it, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '319615'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59020'
+    'REDIRECT_URL' => '/basic/web/site/register'
+    'REDIRECT_QUERY_STRING' => 'username=silvana.castano%40asdunimi.it'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=silvana.castano%40asdunimi.it'
+    'REQUEST_URI' => '/basic/web/site/register?username=silvana.castano%40asdunimi.it'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548795512.245
+    'REQUEST_TIME' => 1548795512
+]
+2019-01-29 13:08:46 [127.0.0.1][5][p8j491d8uv1ld0jp6foqaps3an][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('exam/create', Array)
+#9 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2019-01-29 13:08:44 [127.0.0.1][5][p8j491d8uv1ld0jp6foqaps3an][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p8j491d8uv1ld0jp6foqaps3an'
+    '_identity' => 'df319226df1b5a9cf84704b733f8fca4a2bb2ecf848ddefc15b8d3667c6d30caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"acEfTkFd2N76lf5XlzHjo5ES-_1QnFcg\",2592000]\";}'
+    '_csrf' => '2f6586c7936a4aec2956ad3baa0738861927261eb5e480b7e1a80c64353d3d3aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ez9HL6BVTiXXS2GCjxw2b7z1DammQf8O\";}'
+]
+
+$_SESSION = [
+    '__id' => 5
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=p8j491d8uv1ld0jp6foqaps3an; _identity=df319226df1b5a9cf84704b733f8fca4a2bb2ecf848ddefc15b8d3667c6d30caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22acEfTkFd2N76lf5XlzHjo5ES-_1QnFcg%22%2C2592000%5D%22%3B%7D; _csrf=2f6586c7936a4aec2956ad3baa0738861927261eb5e480b7e1a80c64353d3d3aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ez9HL6BVTiXXS2GCjxw2b7z1DammQf8O%22%3B%7D'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 323854: before request, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '323854'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50575'
+    'REDIRECT_URL' => '/basic/web/exam/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/exam/create'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548796124.877
+    'REQUEST_TIME' => 1548796124
+]
+2019-01-29 13:10:20 [127.0.0.1][5][p8j491d8uv1ld0jp6foqaps3an][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('exam/create', Array)
+#9 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Bitnami\wappstack-7.1.17-0\apache2\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2019-01-29 13:10:19 [127.0.0.1][5][p8j491d8uv1ld0jp6foqaps3an][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p8j491d8uv1ld0jp6foqaps3an'
+    '_identity' => 'df319226df1b5a9cf84704b733f8fca4a2bb2ecf848ddefc15b8d3667c6d30caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"acEfTkFd2N76lf5XlzHjo5ES-_1QnFcg\",2592000]\";}'
+    '_csrf' => '2f6586c7936a4aec2956ad3baa0738861927261eb5e480b7e1a80c64353d3d3aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ez9HL6BVTiXXS2GCjxw2b7z1DammQf8O\";}'
+]
+
+$_SESSION = [
+    '__id' => 5
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'REDIRECT_PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'REDIRECT_STATUS' => '200'
+    'OPENSSL_CONF' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/conf/openssl.cnf'
+    'PATH' => 'C:\\Bitnami\\wappstack-7.1.17-0/apache2/bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp64\\bin\\php\\php5.6.35;C:\\Bitnami\\wappstack-7.1.17-0\\postgresql\\pgAdmin 4\\bin;C:\\Bitnami\\wappstack-7.1.17-0\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseHg\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,zh-CN;q=0.5,zh;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=p8j491d8uv1ld0jp6foqaps3an; _identity=df319226df1b5a9cf84704b733f8fca4a2bb2ecf848ddefc15b8d3667c6d30caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22acEfTkFd2N76lf5XlzHjo5ES-_1QnFcg%22%2C2592000%5D%22%3B%7D; _csrf=2f6586c7936a4aec2956ad3baa0738861927261eb5e480b7e1a80c64353d3d3aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ez9HL6BVTiXXS2GCjxw2b7z1DammQf8O%22%3B%7D'
+    'HTTP_X_HOLA_UNBLOCKER_BEXT' => 'reqid 324472: before request, vpn is not allowed, send headers'
+    'HTTP_X_HOLA_REQUEST_ID' => '324472'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Bitnami/wappstack-7.1.17-0/apache2/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '51771'
+    'REDIRECT_URL' => '/basic/web/exam/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/exam/create'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1548796219.528
+    'REQUEST_TIME' => 1548796219
+]
