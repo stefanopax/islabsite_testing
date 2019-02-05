@@ -7,7 +7,8 @@ return [
     'radius_suffix' => 'unimi.it',
     'student_suffix' => 'studenti.unimi.it',
 	'authradius' => '100',
-	'bypass' => false,
+	'bypass' => true,
 	'time_validity' => '300',
-	'page_size' => '10'
+	'page_size' => '10',
+    'admin_contact' => 'stefano.montanelli@unimi.it'
 ];

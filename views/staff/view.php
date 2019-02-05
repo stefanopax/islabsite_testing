@@ -38,7 +38,7 @@ use yii\helpers\Url;
 							<li><?= Html::a($entry->title, ['staff/content', 'page'=>$entry->id], ['data' => ['method' => 'post']]) ?></li>
 						<?php } // Yii::$app->runAction('MenuEntryController/index', ['string' => $entry->content]);
                     else { ?>
-                        <li><?= Html::a($entry->title, Url::to($entry->link, true)); ?></li>
+                        <li><?= Html::a($entry->title, Url::to($entry->link, true), ['target'=>'_blank', 'class' => 'target-blank']); ?></li>
                     <?php }
 				}
                 ?>

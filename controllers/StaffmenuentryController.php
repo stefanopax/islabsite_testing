@@ -30,7 +30,7 @@ class StaffmenuentryController extends Controller
                         'roles' => ['staff','teacher']
                     ],
 					[
-						'actions' => ['index','view','update'],
+						'actions' => ['index','view','update','create'],
 						'allow' => true,
 						'roles' => ['admin']
 					],

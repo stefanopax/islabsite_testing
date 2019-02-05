@@ -93,14 +93,4 @@ class CourseController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
-
-    /**
-     * Temporary action
-     * @return mixed
-     */
-    public function actionNews()
-    {
-        return $this->render('news');
-    }
-
 }

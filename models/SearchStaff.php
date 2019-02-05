@@ -40,7 +40,10 @@ class SearchStaff extends Staff
      */
     public function search($params)
     {
-        $query = Staff::find()->orderBy('id');
+        $query = Staff::find()
+		->joinWith('user')
+		->where(['user.is_disabled' => false]);
+		//$query = Staff::find()->orderBy('id');
 
 		// add conditions that should always be applied here
 

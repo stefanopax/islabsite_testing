@@ -12,6 +12,7 @@ use yii\web\ForbiddenHttpException;
 use app\models\User;
 use app\models\Staff;
 use app\models\SearchStaffAdmin;
+use yii\web\UploadedFile;
 
 /**
  * AdminstaffController implements the CRUD actions for Staff model.
@@ -100,6 +101,7 @@ class AdminstaffController extends Controller
      * @return mixed
      * @throws \yii\base\Exception
      * @throws \Exception
+     * @throws \Throwable
      */
     public function actionCreate()
     {
@@ -109,21 +111,19 @@ class AdminstaffController extends Controller
          if ($model->load(Yii::$app->request->post())) {
 			$model->generateAuthKey();
 			$model->setPassword($model->password);
-			if($model->save()){
+			if($model->save()) {
+                $staff->imageFile = UploadedFile::getInstance($staff, 'image');
 				$staff->setId($model->getId());
-				if($staff->load(Yii::$app->request->post()) && $staff->save()){
-					$staff->assignRole($this->rolebase);
-					return $this->redirect(['view', 'id' => $model->id]);
-				}
-			}
-			else {
-                try {
-                    $model->delete();
-                } catch (StaleObjectException $e) {
-                } catch (\Throwable $e) {
+                $staff->image = "/img/staff".$staff->getId();
+                $staff->image .= UploadedFile::getInstance($staff, 'image')->getBaseName().".".UploadedFile::getInstance($staff, 'image')->getExtension();
+				if($staff->save() && $staff->upload($staff->id)) {
+                    $staff->assignRole($this->rolebase);
+                    return $this->redirect(['view', 'id' => $staff->id]);
                 }
+                else
+                    $staff->delete();
             }
-			
+			$model->delete();
         }
 
         return $this->render('create', [
@@ -138,17 +138,30 @@ class AdminstaffController extends Controller
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
+     * @throws \yii\base\Exception
+     * @throws \Throwable
      */
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
 		$staff = Staff::findStaff($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-			$staff->setId($model->getId());
-			if($staff->load(Yii::$app->request->post()) && $staff->save()){
-				return $this->redirect(['view', 'id' => $model->id]);
-			}
+        if ($model->load(Yii::$app->request->post())) {
+            $model->generateAuthKey();
+            $model->setPassword($model->password);
+            if($model->save()) {
+                $staff->imageFile = UploadedFile::getInstance($staff, 'image');
+                $staff->setId($model->getId());
+                $staff->image = "/img/staff".$staff->getId();
+                $staff->image .= UploadedFile::getInstance($staff, 'image')->getBaseName().".".UploadedFile::getInstance($staff, 'image')->getExtension();
+                if($staff->save() && $staff->upload($staff->id)) {
+                    $staff->assignRole($this->rolebase);
+                    return $this->redirect(['view', 'id' => $staff->id]);
+                }
+                else
+                    $staff->delete();
+            }
+            $model->delete();
         }
 
         return $this->render('update', [

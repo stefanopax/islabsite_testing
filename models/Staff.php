@@ -3,6 +3,7 @@
 namespace app\models;
 
 use yii\web\NotFoundHttpException;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "{{%staff}}".
@@ -27,6 +28,11 @@ use yii\web\NotFoundHttpException;
 class Staff extends \yii\db\ActiveRecord
 {
     /**
+     * @var UploadedFile
+     */
+    public $imageFile;
+
+    /**
      * {@inheritdoc}
      */
     public static function tableName()
@@ -40,15 +46,13 @@ class Staff extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['imageFile'], 'file', 'skipOnEmpty' => false],
             [['image'], 'required'],
             [['description'], 'string'],
-            [['cellphone', 'phone', 'room'], 'string', 'max' => 20],
-            [['mail'], 'string', 'max' => 100],
-            [['address', 'role'], 'string', 'max' => 50],
-            [['image'], 'string', 'max' => 30],
-            [['fax'], 'string', 'max' => 15],
+            [['cellphone', 'phone', 'fax'], 'string', 'max' => 20],
+            [['address', 'room', 'mail', 'role', 'link', 'image'], 'string', 'max' => 100],
             [['id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['id' => 'id']],
-			[['link'], 'string', 'max' => 100],
+            [['image'], 'file', 'extensions' => 'png, jpg, bmp, gif']
         ];
     }
 
@@ -100,6 +104,14 @@ class Staff extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'id']);
     }
+	
+	/**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUser()
+    {
+        return $this->hasOne(User::className(), ['id' => 'id']);
+    }
 
     /**
      * @return int
@@ -110,6 +122,7 @@ class Staff extends \yii\db\ActiveRecord
     }
 
     /**
+     * @param integer $id
      * @return Staff
      */
 	public static function findStaff($id)
@@ -126,8 +139,9 @@ class Staff extends \yii\db\ActiveRecord
     }
 
     /**
+     * @param $role
      * @return void
-     * @throws \Exception
+     * @throws NotFoundHttpException
      */
 	public function assignRole($role)
 	{
@@ -143,4 +157,25 @@ class Staff extends \yii\db\ActiveRecord
 			 throw new NotFoundHttpException('The requested page does not exist.');
 		}
 	}
+
+    /**
+     * @param integer $id
+     * @return bool
+     */
+    public function upload($id)
+    {
+        if($this->validate()) {
+            $this->imageFile->name = 'staff'. $id . $this->imageFile->baseName. '.' . $this->imageFile->extension;
+            try {
+                $this->imageFile->saveAs('img/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
+            }
+            catch(\Exception $exception) {
+                return false;
+            }
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }

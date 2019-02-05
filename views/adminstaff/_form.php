@@ -30,8 +30,8 @@ use yii\widgets\ActiveForm;
 	<?= $form->field($staff, 'room')->textInput(['maxlength' => true]) ?>
 	
 	<?= $form->field($staff, 'address')->textInput(['maxlength' => true]) ?>
-	
-	<?= $form->field($staff, 'image')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($staff, 'image')->fileInput() ?>
 	
 	<?= $form->field($staff, 'fax')->textInput(['maxlength' => true]) ?>
 	

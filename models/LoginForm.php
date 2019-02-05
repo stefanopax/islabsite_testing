@@ -80,7 +80,7 @@ class LoginForm extends Model
 				}
 				else {
 					// user unabled
-                    $this->addError($attribute, 'User disabled, contact admin at stefano.montanelli@unimi.it');
+                    $this->addError($attribute, 'User disabled, contact admin at '.$config['params']['admin_contact']);
 					}
 			}
 			else {
@@ -112,7 +112,7 @@ class LoginForm extends Model
 				$this->register = 0;
 				return $config['params']['authradius'];
             }
-			if(Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600*24*30 : 0)) {
+			if(Yii::$app->user->login($this->getUser(), $this->rememberMe ? (3600 * 24 * 30) : 0)) {
 					return 1;
 					// return true ==> go to the landing page
 			}

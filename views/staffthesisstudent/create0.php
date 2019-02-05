@@ -20,7 +20,7 @@ $this->endContent();
 
     <?= $this->render('_formcreate0', [
         'model' => $model,
-        'thesis' => $thesis,
+        'thesis' => $thesis
     ]) ?>
 
 </div>

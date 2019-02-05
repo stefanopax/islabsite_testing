@@ -43,7 +43,6 @@ $role = Yii::$app->authManager->getRolesByUser(\Yii::$app->user->identity->id);
 	
     <?= $form->field($model, 'imageFile')->fileInput() ?>
 
-
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

@@ -55,7 +55,7 @@ class FileController extends Controller
     public function actionIndex($courseSite)
     {
         $searchModel = new SearchFile();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams,$courseSite);
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $courseSite);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -87,10 +87,10 @@ class FileController extends Controller
     {
         $model = new File();
 
-        if ($model->load(Yii::$app->request->post())) {
+        if($model->load(Yii::$app->request->post())) {
             $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
             $model->setExtension($model->imageFile->extension);
-                if ($model->save()) {
+                if($model->save()) {
                     if($model->upload($model->id)) {
                         return $this->redirect(['view', 'id' => $model->id]);
                     }
@@ -109,13 +109,19 @@ class FileController extends Controller
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
+     * @throws \Throwable
+     * @throws \yii\db\StaleObjectException
      */
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
+        $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+        $model->setExtension($model->imageFile->extension);
         if($model->load(Yii::$app->request->post()) && $model->save(false)) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            if($model->upload($model->id)) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
+            else $model->delete();
         }
 
         return $this->render('update', [
@@ -134,7 +140,7 @@ class FileController extends Controller
     {
         $this->findModel($id)->softDelete();
 
-        return $this->redirect(['view', 'id' => $id]);
+        return $this->redirect(['index']);
     }
 
     /**

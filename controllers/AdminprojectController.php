@@ -3,8 +3,10 @@
 namespace app\controllers;
 
 use Yii;
+use yii\db\StaleObjectException;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\web\UploadedFile;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use app\models\Project;
@@ -23,7 +25,6 @@ class AdminprojectController extends Controller
         return [
 			'access' => [
                 'class' => AccessControl::className(),
-                //'only' => ['view'],
                 'rules' => [
                     [
                         'actions' =>  ['view','index','create','update','delete'],
@@ -73,16 +74,22 @@ class AdminprojectController extends Controller
      * Creates a new Project model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
+     * @throws \Throwable
+     * @throws \yii\db\StaleObjectException
      */
     public function actionCreate()
     {
         $model = new Project();
 
-        if ($model->load(Yii::$app->request->post())){
-			$model->setCreated_at();
-			if($model->save()) {
-				return $this->redirect(['view', 'id' => $model->id]);
-			}
+        if ($model->load(Yii::$app->request->post())) {
+            $model->setCreated_at();
+            $model->setId();
+            $model->imageFile = UploadedFile::getInstance($model, 'image');
+            $model->image = "/img/project".$model->getId();
+            $model->image .= UploadedFile::getInstance($model, 'image')->getBaseName().".".UploadedFile::getInstance($model, 'image')->getExtension();
+            if ($model->save() && $model->upload($model->id))
+                    return $this->redirect(['view', 'id' => $model->id]);
+            else $model->delete();
         }
 
         return $this->render('create', [
@@ -102,10 +109,18 @@ class AdminprojectController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post())){
-			//$model->setCreated_at();
-			if($model->save()) {
-				return $this->redirect(['view', 'id' => $model->id]);
-			}
+            $model->setCreated_at();
+            $model->setId();
+            $model->imageFile = UploadedFile::getInstance($model, 'image');
+            $model->image = "/img/project".$model->getId();
+            $model->image .= UploadedFile::getInstance($model, 'image')->getBaseName().".".UploadedFile::getInstance($model, 'image')->getExtension();
+			if($model->save() && $model->upload($model->id))
+				    return $this->redirect(['view', 'id' => $model->id]);
+            try {
+                $model->delete();
+            } catch (StaleObjectException $e) {
+            } catch (\Throwable $e) {
+            }
         }
 
         return $this->render('update', [

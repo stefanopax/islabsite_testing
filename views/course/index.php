@@ -39,6 +39,33 @@ NavBar::end();
 </h4>
 
 <?php
+    // Importing feed from external source
+
+    $rss_tags = array(
+        'title',
+        'description'
+    );
+
+    $rss_item_tag = 'item';
+    if($edition->feed) {
+        $rss_url = $edition->feed;
+        $rssfeed = rss_to_array($rss_item_tag, $rss_tags, $rss_url);
+    }
+
+    function rss_to_array($tag, $array, $url) {
+        $doc = new DOMdocument();
+        $doc->load($url);
+        $rss_array = array();
+        $items = array();
+        foreach($doc->getElementsByTagName($tag) AS $node) {
+            foreach($array AS $key => $value) {
+                $items[$value] = $node->getElementsByTagName($value)->item(0)->nodeValue;
+            }
+            array_push($rss_array, $items);
+        }
+        return $rss_array;
+    }
+
     // grab news content
     foreach ($pages as $page)
         if($page['is_news'])
@@ -47,23 +74,34 @@ NavBar::end();
     if($get = Yii::$app->getRequest()->getQueryParam('page')){
         foreach ($pages as $rows) {
             if ($rows['title'] == $get) {
-                if ($rows['is_public'] && !$rows['is_news'])
+                if ($rows['is_public'] && !$rows['is_news']) {
                     echo '<div class="uk-grid">
                             <div class="uk-width-2-3">
                                 <div class="itp_middle uk-width-1-1 uk-width-medium-3-5">
                                     <div class="itp_section-1 ">
                                         <div class="text">'
-                                            . $rows['content'] . '
+                        . $rows['content'] . '
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="uk-width-1-3">
-                                <div class="text">'
-                                    . $news . '
+                                <div class="text">';
+                    for ($i = 0; $i < count($rssfeed); $i++) {
+                        $k = 0;
+                        foreach ($rssfeed[$i] as $item) {
+                            if ($k == 0) {
+                                $k++;
+                                echo '<b>' . $item . '</b>';
+                            } else
+                                echo $item;
+                        }
+                    }
+                    echo $news . '
                                 </div>
                             </div>
                         </div>';
+                }
                 else {
                     if(!$rows['is_news']) {
                         // show protected page only if user is admin/staff/teacher or student is subscribed
@@ -82,12 +120,22 @@ NavBar::end();
                                         </div>
                                     </div>
                                     <div class="uk-width-1-3">
-                                        <div class="text">'
-                                            . $news . '
+                                        <div class="text">';
+                        for($i=0;$i<count($rssfeed);$i++) {
+                            $k=0;
+                            foreach ($rssfeed[$i] as $item) {
+                                if($k==0) {
+                                    $k++;
+                                    echo '<b>' . $item . '</b>';
+                                }
+                                else
+                                    echo $item;
+                            }
+                        }
+                        echo $news . '
                                         </div>
                                     </div>
                                 </div>';
-                        else
                             Yii::$app->response->redirect(Url::to(['site/login'], true));
                     }
                 }
@@ -96,55 +144,35 @@ NavBar::end();
     }
     else {
         foreach($pages as $rows) {
-            if($rows['is_home'] == true)
+            if($rows['is_home'] == true) {
                 echo '<div class="uk-grid">
                             <div class="uk-width-2-3">
                                 <div class="itp_middle uk-width-1-1 uk-width-medium-3-5">
                                     <div class="itp_section-1 ">
                                         <div class="text">'
-                                            . $rows['content'] . '
+                    . $rows['content'] . '
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="uk-width-1-3">
-                                <div class="text">'
-                                    . $news . '
+                                <div class="text">';
+                for ($i = 0; $i < count($rssfeed); $i++) {
+                    $k = 0;
+                    foreach ($rssfeed[$i] as $item) {
+                        if ($k == 0) {
+                            $k++;
+                            echo '<b>' . $item . '</b>';
+                        } else
+                            echo $item;
+                    }
+                }
+                echo $news . '
                                 </div>
                             </div>
                         </div>';
-        }
-    }
-
-    // Importing feed from external source
-    /*
-    $rss_tags = array(
-        'title',
-        'link',
-        'description',
-        'lastBuildDate'
-    );
-
-    $rss_item_tag = 'item';
-    $rss_url = 'http://islab.di.unimi.it/iNewsMail/feed.php?channel=islab';
-
-    $rssfeed = rss_to_array($rss_item_tag, $rss_tags, $rss_url);
-
-    echo '<pre>';
-    print_r($rssfeed);
-
-    function rss_to_array($tag, $array, $url) {
-        $doc = new DOMdocument();
-        $doc->load($url);
-        $rss_array = array();
-        $items = array();
-        foreach($doc-> getElementsByTagName($tag) AS $node) {
-            foreach($array AS $key => $value) {
-                $items[$value] = $node->getElementsByTagName($value)->item(0)->nodeValue;
             }
-            array_push($rss_array, $items);
         }
-        return $rss_array;
     }
-    */
+
 ?>

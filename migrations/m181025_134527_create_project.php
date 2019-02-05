@@ -17,7 +17,7 @@ class m181025_134527_create_project extends Migration
             'title' => $this->string(100)->notNull(),
             'description' => $this->text()->notNull(),
             'link' => $this->string(100)->notNull(),
-            'created_at' => $this->integer(),
+            'created_at' => $this->integer(), // since this field is integer we can order the values inside
             'image' => $this->string(100)->notNull(),
             'is_deleted' => $this->boolean()->defaultValue('false')
         ]);

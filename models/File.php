@@ -73,6 +73,7 @@ class File extends \yii\db\ActiveRecord
     }
 
     /**
+     * @param string $extension
      * @return void
      */
     public function setExtension($extension)

@@ -112,8 +112,14 @@ class CoursesiteController extends Controller
         $model = $this->findModel($id);
         if($this->checkUser($model->getCourse())) {
 
-            if($model->load(Yii::$app->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'id' => $model->id]);
+            if($model->load(Yii::$app->request->post())){
+                if($model->getCurrentAttribute()) {
+                    $courseSites = CourseSite::findAll(['course' => $model->getCourse()]);
+                    foreach ($courseSites as $courseSite)
+                        $courseSite->softDelete();
+                    if($model->save())
+                        return $this->redirect(['view', 'id' => $model->id]);
+                }
             }
 
             return $this->render('update', [
@@ -135,10 +141,14 @@ class CoursesiteController extends Controller
      */
     public function actionDelete($id)
     {
-        try {
-            $this->findModel($id)->softDelete();
-        } catch (NotFoundHttpException $e) {
-        } catch (\Throwable $e) {
+        $model = $this->findModel($id);
+        if($this->checkUser($model->getCourse())) {
+
+            try {
+                $this->findModel($id)->softDelete();
+            } catch (NotFoundHttpException $e) {
+            } catch (\Throwable $e) {
+            }
         }
 
         return $this->redirect(['index', 'course' => $this->findModel($id)->course]);

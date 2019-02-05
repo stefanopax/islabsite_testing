@@ -11,6 +11,7 @@ namespace app\models;
  * @property string $opening_date
  * @property string $closing_date
  * @property string $css
+ * @property string $feed
  * @property bool $is_current
  * @property int $course
  *
@@ -62,11 +63,22 @@ class CourseSite extends \yii\db\ActiveRecord
         ];
     }
 
+    /**
+     * @param $course
+     * @return CourseSite|null
+     */
     public static function findCurrentCourseSite($course)
     {
         return static::findOne(['course' => $course, 'is_current' => true]);
     }
 
+    /**
+     * @return bool
+     */
+    public function getCurrentAttribute()
+    {
+        return $this->is_current;
+    }
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -75,6 +87,9 @@ class CourseSite extends \yii\db\ActiveRecord
         return $this->hasOne(Course::className(), ['id' => 'course']);
     }
 
+    /**
+     * @return int
+     */
     public function getCourse()
     {
         return $this->course;
@@ -97,11 +112,12 @@ class CourseSite extends \yii\db\ActiveRecord
     }
 
     /**
+     * @param integer $id
      * @return CourseSite
      */
     public static function findIdentity($id)
     {
-        return static::findOne(['id' => $id]);		// 'is_disabled' => 0
+        return static::findOne(['id' => $id]);
     }
 
     /**
@@ -113,7 +129,6 @@ class CourseSite extends \yii\db\ActiveRecord
      */
     public function createCourseSite($course)
     {
-
         $current = CourseSite::findCurrentCourseSite($course);
         $this->title = $current->title;
         $this->edition = $current->edition;
@@ -170,5 +185,4 @@ class CourseSite extends \yii\db\ActiveRecord
         $this->is_current = false;
         $this->save();
     }
-
 }
